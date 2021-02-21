@@ -1,6 +1,11 @@
+"""
+coin toss using random()
+"""
+
 import random
-x = random.random()  
+
+x = random.random()
 if x < 0.5:
-    print("Heads")  
+    print("Heads")
 else:
     print("Tails")

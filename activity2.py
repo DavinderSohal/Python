@@ -1,3 +1,9 @@
+"""
+Use the random number generator from the last slide (Flow of control ppt) to generate a random number between 0 and
+1, then using this number, make some calculations to then generate the simulation of rolling a six sided dice (return
+a value ranging from 1 to 6)
+"""
+
 import random
 
 i = random.random()
