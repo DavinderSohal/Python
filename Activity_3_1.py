@@ -7,7 +7,7 @@ a value ranging from 1 to 6)
 import random
 
 i = 1
-while i > 0.7 or i <= 0.1:
+while i <= 0.1 or i > 0.7:
     i = random.random()
 print(i)
 if i > 0.1 and i <= 0.2:
