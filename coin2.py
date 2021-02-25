@@ -1,6 +1,4 @@
-"""
-coin toss using random()
-"""
+# coin toss using random()
 
 import random
 

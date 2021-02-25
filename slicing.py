@@ -1,3 +1,5 @@
+# Slice operations on string and list
+
 s = "hello"
 print(s[1:4])
 print(s[1:5:3])

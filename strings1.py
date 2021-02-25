@@ -1,6 +1,4 @@
-"""
-String operations
-"""
+# String operations
 
 str1 = "Unix"
 str2 = 'Python'

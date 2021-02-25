@@ -1,6 +1,4 @@
-"""
-if-else in Python
-"""
+# if-else in Python
 
 x = 33
 

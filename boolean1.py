@@ -1,6 +1,4 @@
-"""
-Booleans in python (True or False)
-"""
+# Booleans in python (True or False)
 
 x = 1
 print((x > 0) and (x < 10))

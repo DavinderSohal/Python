@@ -1,3 +1,10 @@
+# lists and loops
+# Create the following list of numbers: [3,7,5,2,9,7]
+# Write a while loop that will print out the numbers
+# Write a for loop that will print out the numbers
+# Using a loop, write the code that will print out all elements that are larger than their neighbor i.e.: (7,9)
+# Write the code that will loop through the list and for every odd number prints: “Odd” and every even number “Even”
+
 my_list = [3, 7, 5, 2, 9, 7]
 
 i = 0

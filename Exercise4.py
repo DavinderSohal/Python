@@ -1,13 +1,11 @@
-"""
-Write a complete application that inputs three integers from the user and displays the sum, average, product,
-smallest and largest of these numbers. The average calculation should result in a floating point number.
-For example, if the input is “1,2,3” the output should be:
-   Sum: 6
-   Average: 2
-   Product: 6
-   Smallest: 1
-   Largest: 3
-"""
+# Write a complete application that inputs three integers from the user and displays the sum, average, product,
+# smallest and largest of these numbers. The average calculation should result in a floating point number.
+# For example, if the input is “1,2,3” the output should be:
+#    Sum: 6
+#    Average: 2
+#    Product: 6
+#    Smallest: 1
+#    Largest: 3
 
 i = input("Enter three numbers: ")
 j = input()
