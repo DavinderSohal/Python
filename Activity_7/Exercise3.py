@@ -1,3 +1,11 @@
+# Create a coin toss function that simulates tossing a coin (returns heads or tails).
+# Next, change the function so that it takes an argument that allows the programmer to specify a percentage chance of
+# getting heads. For example calling the function like: coinToss(headsProb = 0.7) where coinToss is the name of the
+# function. Heads should now come up 70% of the time
+# Afterwards, make an additional change so that headsProb is an optional argument in the function and if no argument
+# is given, the coin toss will be fair (50/50)
+
+
 import random
 
 

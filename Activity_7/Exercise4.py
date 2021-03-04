@@ -4,6 +4,7 @@
 # Create a program that will take some value “n” and then return the total amount of money he will have in his bank
 # account at the end of the nth day.
 
+
 n = int(input("Enter value of n: "))
 
 total = 0

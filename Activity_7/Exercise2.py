@@ -1,3 +1,8 @@
+# Change your dice function so that it will return the result instead of printing the values
+# Then create another dice function called dice2 that simulates throwing two die and then calculating the sum.
+# Your dice2 function should utilize the first dice function.
+
+
 import random
 
 
