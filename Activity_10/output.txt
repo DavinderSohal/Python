@@ -1,0 +1,2 @@
+{'﻿ConstituentID': '4058', 'DisplayName': 'Claude Monet', 'ArtistBio': 'French, 1840–1926', 'Nationality': 'French', 'Gender': 'Male', 'BeginDate': '1840', 'EndDate': '1926', 'Wiki QID': 'Q296', 'ULAN': '500019484'}
+{'﻿ConstituentID': '4609', 'DisplayName': 'Pablo Picasso', 'ArtistBio': 'Spanish, 1881–1973', 'Nationality': 'Spanish', 'Gender': 'Male', 'BeginDate': '1881', 'EndDate': '1973', 'Wiki QID': 'Q5593', 'ULAN': '500009666'}
