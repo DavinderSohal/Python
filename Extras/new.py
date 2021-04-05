@@ -32,4 +32,3 @@ while choice == "yes":
             print()
     choice = input("Display another pattern: (yes/no): ")
     print("Thank u")
-

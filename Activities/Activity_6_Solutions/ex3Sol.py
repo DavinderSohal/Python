@@ -1,4 +1,4 @@
-#Activity 6 - Exercise 3 Solution
+# Activity 6 - Exercise 3 Solution
 
 n = input("Enter a number: ")
 x = str(n)
@@ -9,4 +9,4 @@ for c in x:
     k -= 1
     if k and k % 3 == 0:
         ans.append('.')
-print("".join(ans))       
+print("".join(ans))

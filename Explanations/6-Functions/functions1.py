@@ -1,13 +1,12 @@
-
-
-
-def myFirstFunction():   # defining a function  
+def my_first_function():  # defining a function
     print("Hello World")
 
-myFirstFunction()	 # calling the function
+
+my_first_function()  # calling the function
 
 
-def oneArgument(arg1):
-    print(arg1)          # function with one argument 
+def one_argument(arg1):
+    print(arg1)  # function with one argument
 
-oneArgument("test")	 # calling the function
+
+one_argument("test")  # calling the function

@@ -8,5 +8,5 @@ def totalMoney(n):
     ans += q * (r + 1)
     return ans
 
-print(totalMoney(10))
 
+print(totalMoney(10))

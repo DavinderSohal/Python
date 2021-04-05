@@ -1,9 +1,9 @@
 import re
 
-#Exercise 1:
-#Code is incomplete, fill out rest to iterate over the data text and print out
-#lines that match your regex, to test you can add additional lines to data that do not match the regex
-#this is a comment, this wont be picked up by the compiler
+# Exercise 1:
+# Code is incomplete, fill out rest to iterate over the data text and print out
+# lines that match your regex, to test you can add additional lines to data that do not match the regex
+# this is a comment, this wont be picked up by the compiler
 
 data = '''
 Apr 12, 5:00, S=70%
@@ -17,37 +17,8 @@ Add new lines
 Random lines such as this one
 '''
 
-pattern = re.compile = ("^([a-zA-Z]+) ?([0-9]+)[, ]*[0-9:]+[^,]+, ?S=([0-9]+)d?[$%]")
+pattern = re.compile("^([a-zA-Z]+) ?([0-9]+)[, ]*[0-9:]+[^,]+, ?S=([0-9]+)d?[$%]")
 
 for data_line in data.split('\n'):
-    #finish the rest of the code
-
-
-
-    
-    
-    
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print(re.findall(pattern, data_line))
+    # finish the rest of the code

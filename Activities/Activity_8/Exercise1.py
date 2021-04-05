@@ -1,3 +1,13 @@
+# You are given some array called “x” that contains 2 * n elements in the arrangement of [x1, x2,…,xn,y1,y2,
+# …yn] (where n is the elements contained the in the array)
+# Create a function that will return the array in the form of [x1,y1,x2,y2,…,xn,yn]
+# Sample example 1:
+#    User input: [1,2,3,4,4,3,2,1] and n = 4
+#    Output: [1,4,2,3,3,2,4,1]
+# Sample example 2:
+#    User input: [1,1,2,2] and n = 2
+#    Output: [1,2,1,2]
+
 def rearrange_array():
     first_list = x[:array_length]
     second_list = x[array_length:]

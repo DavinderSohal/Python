@@ -1,3 +1,15 @@
+# Write a program that incorporates an algorithm with a function that will check whether or not a string is in a
+# valid password format with the following rules:
+#
+# A password must have at least ten characters.
+# A password consists of only letters, digits and symbol(s).
+# A password must contain at least two digits.
+# A password must contain at least one uppercase letter
+# A password must contain at least one special symbol
+#
+# Your program should continue to prompt the user until he/she enters a valid password.
+# Your program may not use any regex (regular expressions)
+
 def valid_password(password):
     temp = False
     digit_count = 0

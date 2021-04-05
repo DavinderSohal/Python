@@ -1,3 +1,8 @@
+# Modify your code to look for lines that contain either of the following artists: Pablo Picasso or Claude Monet and
+# print only those two lines out.
+# Return the two rows in a separate file called output.txt
+# Bonus: Remove the two above lines from Artists.csv and save the new file as Artists2.csv separately.
+
 from csv import DictReader
 
 artists = []

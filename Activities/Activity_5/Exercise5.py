@@ -26,6 +26,6 @@ for x in range(0, no_of_lines):
         print(" ", end = "")
     for z in range(x, no_of_lines):
         print("*", end = "")
-    for w in range(x, no_of_lines-1):
+    for w in range(x, no_of_lines - 1):
         print("*", end = "")
     print("")
