@@ -1,7 +1,8 @@
 import random
 
-colours = {'blue': '\033[94m', 'cyan': '\033[96m', 'green': '\033[92m',
-           'yellow': '\033[93m', 'red': '\033[91m', 'end': '\033[0m', 'bold': '\033[1m', 'underline': '\033[4m'}
+
+# colours = {'blue': '\033[94m', 'cyan': '\033[96m', 'green': '\033[92m',
+#            'yellow': '\033[93m', 'red': '\033[91m', 'end': '\033[0m', 'bold': '\033[1m', 'underline': '\033[4m'}
 
 
 def welcome():
@@ -16,7 +17,7 @@ def welcome():
     print(f"This Metro line has {no_of_stations} stations.\n")
 
     name_of_stations = {}
-    for i in range(0, no_of_stations):
+    for i in range(no_of_stations):
         name_of_stations[i + 1] = (input(f"Enter name of station {i + 1}: "))
 
     return no_of_stations, name_of_stations
@@ -96,15 +97,17 @@ class A1Metro:
                 self.station_num)], new_passengers, pass_getting_on, pass_getting_off = self.passengers(
                 waiting_passengers)
             print(
-                f"{colours['cyan']}Station number {self.station_num}\n(New passengers waiting {new_passengers})\n("
-                f"Passengers left from "
-                f"last time {last_time.get(str(self.direction) + '-' + str(self.station_num), 0)}){colours['end']}")
+                f"Station number {self.station_num}"
+                f"\n(New passengers waiting {new_passengers})"
+                f"\n(Passengers left from last time "
+                f"{last_time.get(str(self.direction) + '-' + str(self.station_num), 0)})")
             print("------------------------------------------------------")
             last_time[str(self.direction) + "-" + str(self.station_num)] = waiting_passengers[
                 str(self.direction) + '-' + str(self.station_num)]
 
             print(
-                f"{colours['underline']}Metro {self.metro_id}{colours['end']} leaving station {s_name[self.station_num]} {directions[self.direction]} bound "
+                f"Metro {self.metro_id} leaving station "
+                f"{s_name[self.station_num]} {directions[self.direction]} bound "
                 f"with {self.pass_total} passenger(s)."
                 f"\n\t  Passenger(s) got off: {pass_getting_off}"
                 f"\n\t  Passenger(s) new passengers waiting to board: {new_passengers}"
@@ -113,8 +116,8 @@ class A1Metro:
                 f"{waiting_passengers[str(self.direction) + '-' + str(self.station_num)]}")
 
             choice = input(
-                f'\nDo you want to continue following Metro train {self.metro_id}?\nType "y" or "Y" for yes, '
-                f'anything else for no: ')
+                f'\nDo you want to continue following Metro train {self.metro_id}?'
+                f'\nType "y" or "Y" for yes, anything else for no: ')
             if choice.lower() == "y":
                 continue
             else:
@@ -127,6 +130,6 @@ train = A1Metro()
 
 train.display(station_name, station_total)
 
-print(f"\n{colours['green']}Thank you for using Metro Manager\nBe sure to look out for future enhancements!")
+print(f"\n----[Thank you for using Metro Manager]----\nBe sure to look out for future enhancements!\n\n\t\t\t\t＼( ･_･)")
 
 exit()
