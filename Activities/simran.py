@@ -17,7 +17,7 @@ class Metro:
 
     # Accessor method of metroID attribute.
     def get_metro_id(self):
-        return self.metro_id
+        return self.m_id
 
     # Accessor method of stationNum attribute.
     def get_station_num(self):
@@ -33,7 +33,7 @@ class Metro:
 
     # Mutator method of metroID attribute.
     def set_metro_id(self, metro_id):
-        self.metro_id = metro_id
+        self.m_id = metro_id
 
     # Mutator method of stationNum attribute.
     def set_station_num(self, station_num):
@@ -48,22 +48,22 @@ class Metro:
         self.pass_total = pass_total
 
     def metro_id(self):
-        metroid = random.randrange(1, 1000)
+        self.m_id = random.randrange(1, 1000)
         pass_total = 0
-        return metroid, pass_total
+        return self.m_id, pass_total
 
-    def color1(self, metroid):
-        if metroid >= 1 and metroid <= 300:
-            color = "blue"
-            return color
-        elif metroid >= 301 and metroid <= 600:
-            color = "yellow"
-            return color
+    def color1(self):
+        if 1 <= self.m_id <= 300:
+            color_ = "blue"
+            return color_
+        elif 301 <= self.m_id <= 600:
+            color_ = "yellow"
+            return color_
         else:
-            color = "Green"
-            return color
+            color_ = "Green"
+            return color_
 
-    def Metro_direction(self):
+    def metro_direction(self):
         print("for east to west : 1" + "\n" + "from north to south : 2")
         while True:
             dir = int(input("Enter the direction : "))
@@ -84,6 +84,15 @@ class Metro:
             else:
                 print(" ")
         return Station_num
+
+    def next_station(self, last_station):
+        if (last_station == 1 and self.direction == 1) or (last_station == stationum and self.direction == 0):
+            next_station = last_station
+        elif self.direction == 0 and last_station < stationum:
+            next_station = last_station + 1
+        else:
+            next_station = last_station - 1
+        return next_station
 
     def Movingtrain(self, id, stationum, metro_direc, total, color):
         direction = ["east", "west", "north", "south"]
@@ -324,8 +333,8 @@ print("-----------------------------------------------------------")
 train = Metro()
 id, total = train.metro_id()
 print("The metro id is " + str(id))
-metro_direc = train.Metro_direction()
-color = train.color1(id)
+metro_direc = train.metro_direction()
+color = train.color1()
 stationum = train.Station()
 print("---------------------------------------")
 train.Movingtrain(id, stationum, metro_direc, total, color)
@@ -335,7 +344,7 @@ print("--------------------------Welcome to New Metro-----------------------")
 train2 = Metro()
 id1, total = train2.metro_id()
 print("The metro id is " + str(id1))
-metro_direc = train.Metro_direction()
+metro_direc = train.metro_direction()
 stationum = train2.Station()
 print("---------------------------------------")
 train2.Movingtrain(id, stationum, metro_direc, total, color)
